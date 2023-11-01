@@ -1,0 +1,27 @@
+version: "3"
+
+tasks:
+  default:
+    silent: true
+    cmds:
+      - task -l
+
+  test:
+    desc: Run Tests
+    cmds:
+      - python -m unittest discover
+
+  pypi-req:
+    desc: Install packages needed to distribute module to PyPi
+    cmds:
+      - pip install wheel setuptools twine
+
+  build-dist:
+    desc: Run Tests
+    cmds:
+      - python setup.py sdist bdist_wheel
+
+  upload-dist:
+    desc: Upload pacakge to PyPi
+    cmds:
+      - twine upload dist/*
