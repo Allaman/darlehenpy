@@ -13,7 +13,7 @@ print(
     f"""Darlehensumme: {DARLEHENSSUMME} €
 Zinssatz (p.a.): {ZINSSATZ} %
 Laufzeit: {LAUFZEIT} Jahre
-Sondertilung (p.a.): {SONDERTILGUNG}
+Sondertilung (p.a.): {SONDERTILGUNG} €
 """
 )
 

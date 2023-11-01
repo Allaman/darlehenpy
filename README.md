@@ -34,19 +34,18 @@ Ausgabe:
 Darlehensumme: 100000 €
 Zinssatz (p.a.): 4.1 %
 Laufzeit: 10 Jahre
-Sondertilung (p.a.): 5000
+Sondertilung (p.a.): 5000 €
 
 Monatsrate: 500 €
 Anfängliche Tilgungsrate: 1.9 %
 Restschuld nach 10 Jahren: 16033.91 €
 Gesamtaufwand: 126033.91 €
-Abbezahlt im None. Jahr und None. Monat
 
 Anfängliche Tilgungsrate: 5.5 %
 Monatsrate: 800.0 €
 Restschuld nach 10 Jahren: 0.0 €
 Gesamtaufwand: 118474.63 €
-Abbezahlt im 9. Jahr und 3. Monat
+Abbezahlt im 3. Monat des 9. Jahres
 ```
 
 Man kann sich damit natürlich viele Werte auf einmal berechnen lassen und vergleichen. Z.B. mit einer CSV mit folgenden Spalten als Input:
