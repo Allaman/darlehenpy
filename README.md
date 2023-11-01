@@ -1,4 +1,10 @@
-# darlehenpy
+<h1 align="center">darlehenpy</h1>
+
+<p align="center">
+<a href="https://github.com/allaman/darlehenpy/actions"><img alt="Test Status" src="https://github.com/allaman/darlehenpy/workflows/Test/badge.svg"></a>
+<a href="https://github.com/allaman/darlehenspy/blob/main/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
+<a href="https://pypi.org/project/darlehen.py/"><img alt="PyPI" src="https://img.shields.io/pypi/v/darlehen.py"></a>
+</p>
 
 Ein kleines Paket zur Berechnung von Darlehen. Bei weitem (noch 😉) nicht so mächtig wie z.B. der [Hypothekenrechner](https://www.zinsen-berechnen.de/hypothekenrechner.php).
 
