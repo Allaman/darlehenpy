@@ -1,6 +1,12 @@
 name: Pylint
 
-on: [push]
+on:
+  push:
+    branches:
+      - "*"
+    paths:
+      - "**.py"
+      - .github/workflows/pylint.yml
 
 jobs:
   build:
