@@ -4,11 +4,20 @@ Ein kleines Paket zur Berechnung von Darlehen. Bei weitem (noch 😉) nicht so m
 
 Es wird zwischen der Berechnung basierend auf der Monatsrate oder basierend auf der anfänglichen Tilgungsrate unterschieden. Die Angabe einer jährlichen Sondertilgung ist auch möglich.
 
-## Nutzung
+## Quickstart
+
+```
+pip install darlehen.py
+import darlehenpy.darlehen as darlehen
+darlehen.berechne_mit_monatsrate(...)
+darlehen.berechne_mit_tilgungsrate(...)
+```
 
 **Achtung!** Punkt als Dezimaltrennzeichen!
 
-Code aus der [beispiel.py](./beispiel.py).
+## Beispiel
+
+Aus der [beispiel.py](https://github.com/Allaman/darlehenpy/blob/main/beispiel.py).
 
 ```python
 import src.darlehenpy.darlehen as darlehen
