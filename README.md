@@ -72,7 +72,7 @@ Gesamtaufwand: 118474.63 €
 Abbezahlt im 9. Jahr und 3. Monat
 ```
 
-Man kann sich damit natürlich viele Werte auf einmal berechnen lassen und so vergleiche. Z.B. mit einer CSV mit folgenden Spalten als Input:
+Man kann sich damit natürlich viele Werte auf einmal berechnen lassen und vergleichen. Z.B. mit einer CSV mit folgenden Spalten als Input:
 
 ```csv
 P,i,M,n,S,
