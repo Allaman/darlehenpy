@@ -27,7 +27,6 @@ print(
     f"""Anfängliche Tilgungsrate: {TILGUNGSRATE} %
 Restschuld nach {LAUFZEIT} Jahren: {restschuld} €
 Gesamtaufwand: {gesamtaufwand} €
-Abbezahlt im {jahr}. Jahr und {monat}. Monat
 """
 )
 
@@ -41,6 +40,6 @@ print(
     f"""Monatsrate: {MONATSRATE} €
 Restschuld nach {LAUFZEIT} Jahren: {restschuld} €
 Gesamtaufwand: {gesamtaufwand} €
-Abbezahlt im {jahr}. Jahr und {monat}. Monat
+Abbezahlt im {monat}. Monat des {jahr}. Jahres
 """
 )
