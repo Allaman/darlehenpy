@@ -63,6 +63,6 @@ P,i,t0,n,S,
 
 ## Tests
 
-Eine Testmatrix mit Werten ermittelt aus dem [Hypothekenrechner](https://www.zinsen-berechnen.de/hypothekenrechner.php) testet die berechneten Ergebnisse.
+Eine Testmatrix mit Werten ermittelt durch den [Hypothekenrechner](https://www.zinsen-berechnen.de/hypothekenrechner.php) auf [zinsen-berechnen.de](https://www.zinsen-berechnen.de) testet die berechneten Ergebnisse.
 
 **Es kann keine Gewährleistung für die von diesem Paket berechneten Ergebnisse übernommen werden**
