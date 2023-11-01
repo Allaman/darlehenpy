@@ -1,29 +1,46 @@
-import src.darlehenpy.darlehen as darlehen
+"""Simple example illustrating the package."""
+from src.darlehenpy import darlehen
 
 # Die Ausgabe kann man schöner machen ;)
 
 # Rahmenbedinungen
-P = 100000
-i = 4.1
-n = 10
-S = 5000
+DARLEHENSSUMME = 100000
+ZINSSATZ = 4.1
+LAUFZEIT = 10
+SONDERTILGUNG = 5000
 
 print(
-    f"Darlehensumme: {P} €\nZinssatz (p.a.): {i} %\nLaufzeit: {n} Jahre\nSondertilung (p.a.): {S}\n"
+    f"""Darlehensumme: {DARLEHENSSUMME} €
+Zinssatz (p.a.): {ZINSSATZ} %
+Laufzeit: {LAUFZEIT} Jahre
+Sondertilung (p.a.): {SONDERTILGUNG}
+"""
 )
 
 # Berechnung basierend auf einer Monatsrate
-M = 500
-print(f"Monatsrate: {M} €")
-t0, R, gesamtaufwand, jahr, monat = darlehen.berechne_mit_monatsrate(P, i, M, n, S)
+MONATSRATE = 500
+print(f"Monatsrate: {MONATSRATE} €")
+TILGUNGSRATE, restschuld, gesamtaufwand, jahr, monat = darlehen.berechne_mit_monatsrate(
+    DARLEHENSSUMME, ZINSSATZ, MONATSRATE, LAUFZEIT, SONDERTILGUNG
+)
 print(
-    f"Anfängliche Tilgungsrate: {t0} %\nRestschuld nach {n} Jahren: {R} €\nGesamtaufwand: {gesamtaufwand} €\nAbbezahlt im {jahr}. Jahr und {monat}. Monat\n"
+    f"""Anfängliche Tilgungsrate: {TILGUNGSRATE} %
+Restschuld nach {LAUFZEIT} Jahren: {restschuld} €
+Gesamtaufwand: {gesamtaufwand} €
+Abbezahlt im {jahr}. Jahr und {monat}. Monat
+"""
 )
 
 # Berechnung basierend auf der anfänglichen Tilgungsrate
-t0 = 5.5
-print(f"Anfängliche Tilgungsrate: {t0} %")
-M, R, gesamtaufwand, jahr, monat = darlehen.berechne_mit_tilgungsrate(P, i, t0, n, S)
+TILGUNGSRATE = 5.5
+print(f"Anfängliche Tilgungsrate: {TILGUNGSRATE} %")
+MONATSRATE, restschuld, gesamtaufwand, jahr, monat = darlehen.berechne_mit_tilgungsrate(
+    DARLEHENSSUMME, ZINSSATZ, TILGUNGSRATE, LAUFZEIT, SONDERTILGUNG
+)
 print(
-    f"Monatsrate: {M} €\nRestschuld nach {n} Jahren: {R} €\nGesamtaufwand: {gesamtaufwand} €\nAbbezahlt im {jahr}. Jahr und {monat}. Monat"
+    f"""Monatsrate: {MONATSRATE} €
+Restschuld nach {LAUFZEIT} Jahren: {restschuld} €
+Gesamtaufwand: {gesamtaufwand} €
+Abbezahlt im {jahr}. Jahr und {monat}. Monat
+"""
 )

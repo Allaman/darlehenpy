@@ -4,6 +4,8 @@ Ein kleines Paket zur Berechnung von Darlehen. Bei weitem (noch 😉) nicht so m
 
 Es wird zwischen der Berechnung basierend auf der Monatsrate oder basierend auf der anfänglichen Tilgungsrate unterschieden. Die Angabe einer jährlichen Sondertilgung ist auch möglich.
 
+[Projekt auf PyPI](https://pypi.org/project/darlehen.py/)
+
 ## Quickstart
 
 ```

@@ -12,9 +12,9 @@ tasks:
       - python -m unittest discover
 
   pypi-req:
-    desc: Install packages needed to distribute module to PyPi
+    desc: Install dependencies
     cmds:
-      - pip install wheel setuptools twine
+      - pip install wheel setuptools twine pylint
 
   build-dist:
     desc: Run Tests
@@ -25,3 +25,8 @@ tasks:
     desc: Upload pacakge to PyPi
     cmds:
       - twine upload dist/*
+
+  lint:
+    desc: Run pylint
+    cmds:
+      - pylint $(git ls-files '*.py')
