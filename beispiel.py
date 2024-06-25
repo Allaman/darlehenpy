@@ -1,4 +1,5 @@
 """Simple example illustrating the package."""
+
 from src.darlehenpy import darlehen
 
 # Die Ausgabe kann man schöner machen ;)
@@ -27,6 +28,7 @@ print(
     f"""Anfängliche Tilgungsrate: {TILGUNGSRATE} %
 Restschuld nach {LAUFZEIT} Jahren: {restschuld} €
 Gesamtaufwand: {gesamtaufwand} €
+Abbezahlt im {monat}. Monat des {jahr}. Jahres
 """
 )
 
